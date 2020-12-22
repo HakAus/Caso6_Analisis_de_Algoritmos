@@ -46,23 +46,6 @@ void mergeBirdData(Bird* pBird1, Bird* pBird2)
 		pBird1->minSpeed = pBird2->minSpeed;
 }
 
-void merge(Flock *f1, Flock *f2)
-{
-	// Se van uniendo los calculos parciales
-	int mergeIndex;
-	#pragma omp parallel for
-	for (mergeIndex = 0; mergeIndex < NUM_BIRDS; mergeIndex++){
-		if (f2->birds[mergeIndex].id != -1)	// Hay threads que a veces no tocan ciertos pajaros por lo que el id viene con -1, esos no los debe actualizar
-		{
-			mergeBirdData(&f1->birds[mergeIndex], &f2->birds[mergeIndex]);
-
-			updateRanking(&f1->topFurthestDistance, f1->birds[mergeIndex].distance, f1->birds[mergeIndex].id);
-			updateRanking(&f1->topFastest, f1->birds[mergeIndex].maxSpeed, f1->birds[mergeIndex].id);
-			updateRanking(&f1->topSlowest, f1->birds[mergeIndex].minSpeed, f1->birds[mergeIndex].id);
-		}
-	}
-}
-
 void updateBird(Bird* pBird, int pId, double pDistance, double pSpeed)
 {
 	pBird->id = pId;
