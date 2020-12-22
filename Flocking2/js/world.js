@@ -64,10 +64,12 @@ World.prototype.init = function() {
 	}
 
 	this.distance = function() {
+		this.flock.set_view_mode(1);
 		this.flock.set_view_option(0);
 	}
 
 	this.velocity = function() {
+		this.flock.set_view_mode(1);
 		this.flock.set_view_option(1);
 	}
 
@@ -75,14 +77,9 @@ World.prototype.init = function() {
 		this.flock.set_view_mode(0);
 	}
 
-	this.control = function() {
-		this.flock.set_view_mode(1);
-	}
-
 	var octree_control = this.gui.add(this, 'draw_octree');
 	var view_option_distance = this.gui.add(this, 'distance');
 	var view_option_velocity = this.gui.add(this, 'velocity');
-	var view_mode_control = this.gui.add(this, 'control');
 	var view_mode_automatic = this.gui.add(this, 'automatic');
 	
 	

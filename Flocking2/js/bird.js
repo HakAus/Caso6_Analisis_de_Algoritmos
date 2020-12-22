@@ -1,4 +1,13 @@
-
+var ranking = {
+	maslargo1 : 11.930765,
+	maslargo2 : 11.729464,
+	mascorto1 : 8.678069,
+	mascorto2 : 9.313357,
+	masrapida1 : 6.963953,
+	masrapida2 : 6.450825,
+	maslenta1 : 2.001000,
+	maslenta2 : 2.005175
+}
 var Bird = function(scene, octree, obstacles, velocity_hash, position, orientation) {
 	this.scene = scene;
 	this.octree = octree;
