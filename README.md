@@ -10,7 +10,7 @@ Esta versión tiene soporte completo para OpenMP 4.5 y soporte parcial para Open
 2. En la esquina superior derecha se puede notar un boton "get_data", cuando se quiere obtener la info se presiona ahí. 
 3. Para ver la información se debe utilizar un navegador que permita inspeccionar el código de la página, para ello se recomienda el uso de Google Chrome. 
 4. Una vez allí se podrá buscar la consola de donde se puede ver la información ya lista en el formato que se utiliza en el programa paralelo en C++ para hacer el ranking.
-5. Se copia y pega la estructura en el programa de C++, en la carpeta "RankingGenerator" especificamente en el archivo main.cpp en la línea 205 y se asigna a la variable de tipo vector llamada flockLog.
+5. Se copia y pega la estructura en el programa de C++, en la carpeta "RankingGenerator" especificamente en el archivo main.cpp en la línea 105 y se asigna a la variable de tipo vector llamada flockLog.
 6. Se compila el programa utilizando el siguiente comando "g++-10 *.cpp -o main -fopenmp"
 7. Se ejecuta el programa utilizando el comando ./main
 8. Se imprime la información de los pájaros (id, distancia recorrida, velocidad máxima, velocidad mínima, color) el ranking y un objeto de JavaScript listo para ser copiado y pegado en el código de la animación
