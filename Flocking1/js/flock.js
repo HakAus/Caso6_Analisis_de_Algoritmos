@@ -109,6 +109,7 @@ Flock.prototype.get_flock_data = function() {
 	for (var i = 0; i < this.flock_size-1; i++) {
 		flock_data += this.birds[i].get_data();
 	}
+	flock_data += this.birds[i].get_data();
 	flock_data = flock_data.substring(0,flock_data.length-1);
 	return flock_data;
 };

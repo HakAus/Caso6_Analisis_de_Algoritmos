@@ -1,6 +1,6 @@
 #include <string>
 
-const int NUM_BIRDS = 9;
+const int NUM_BIRDS = 10;
 
 struct Rank
 {

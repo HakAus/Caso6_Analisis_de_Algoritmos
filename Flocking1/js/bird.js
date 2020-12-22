@@ -224,6 +224,7 @@ Bird.prototype.get_data = function() {
 	for (var i = 0; i < this.data.length; i++){
 		buffer += this.data[i];
 	}
+
 	return buffer;
 };
 
