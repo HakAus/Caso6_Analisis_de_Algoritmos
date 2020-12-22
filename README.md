@@ -7,7 +7,7 @@ NOTAS IMPORTANTES:
 - Este código fue ejecutado usando el compilador g++-10 (Homebrew GCC 10.2.0) 10.2.0
 - Esta versión tiene soporte completo para OpenMP 4.5 y soporte parcial para OpenMP 5.0
 
-1. En Flocking1/js/world.js en la linea 46 se indica la cantidad de pájaros que se desean animar.
+1. En Flocking1/js/world.js en la linea 46 se indica la cantidad de pájaros que se desean animar. En el RankingGenerator/structs.h se debe definir la misma cantidad de pajaros para generar correctamente el escalafón o ranking.
 2. Se debe correr Flocking1/index.html por el tiempo que se desee obtener datos de la simulación. 
 3. En la esquina superior derecha se puede notar un boton "get_data", cuando se quiere obtener la info se presiona ahí. 
 4. Para ver la información se debe utilizar un navegador que permita inspeccionar el código de la página, para ello se recomienda el uso de Google Chrome. 
